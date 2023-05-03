@@ -8,19 +8,20 @@
   gap: 40px;
 
   position: absolute;
-  width: 120px;
-  height: 48px;
-  left: 40px;
-  top: 40px;
+  width: 7%;
+  height: 4%;
+  left: 2%;
+  top: 2%;
 }
 
 .Logo2{
-  width: 120px;
-  height: 48px;
+  width: 7%;
+  height: 2%;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
+
 
 .Vector{
   position: absolute;
@@ -31,18 +32,24 @@
 }
 
 .Text{
+  display: inline-block;
   position: absolute;
-  width: 577px;
-  height: 48px;
-  left: 240px;
-  top: 168px;
+  width: 30%;
+  height: 65%;
+  left: 15%;
+  top: 15%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 150%;
   color: #0A3871;
+  background-color: #F3F5FC;
+  border: none;
+  resize: none;
+  border-radius: 10px;
 }
+
 
 .Alert{
   display: flex;
@@ -51,10 +58,10 @@
   padding: 0px;
   gap: 8px;
   position: absolute;
-  width: 229px;
-  height: 18px;
-  left: 240px;
-  top: 851px;
+  width: 20%;
+  height: 2%;
+  left: 13%;
+  top: 87%;
 }
 
 .Alert-Text{
@@ -79,37 +86,47 @@
   padding: 0px;
   gap: 24px;
   position: absolute;
-  width: 680px;
-  height: 67px;
-  left: 240px;
-  top: 885px;
+  width: 25%;
+  height: 8%;
+  left: 13%;
+  top: 90%;
 }
 
 .Encriptar{
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 24px;
-  gap: 8px;
-  width: 328px;
   background: #0A3871;
+  border: 1px solid #D8DFE8;
   border-radius: 24px;
   flex: none;
-  order: 0;
+  order: 1;
   flex-grow: 0;
-  color: #FFFFFF;
+  cursor: pointer;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.Encriptar:hover{
+  background: greenyellow;
+  border: 1px solid #0A3871;
+}
+
+.Encriptar:hover .Button-Encriptar{
+  color: #0A3871;
 }
 
 .Button-Encriptar{
-  width: 280px;
-  height: 19px;
+  width: 45%;
+  height: 100%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 19px;
   text-align: center;
-  color: #FFFFFF;
+  color: #D8DFE8;
   flex: none;
   order: 0;
   flex-grow: 1;
@@ -122,20 +139,29 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 23px;
-  gap: 8px;
-  width: 328px;
   background: #D8DFE8;
   border: 1px solid #0A3871;
   border-radius: 24px;
   flex: none;
   order: 1;
   flex-grow: 0;
+  cursor: pointer;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.Desencriptar:hover{
+  background: #0A3871;
+  border: 1px solid greenyellow;
+}
+
+.Desencriptar:hover .Button-Desencriptar{
+  color: greenyellow;
 }
 
 .Button-Desencriptar{
-  width: 280px;
-  height: 19px;
+  width: 45%;
+  height: 100%;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -148,4 +174,185 @@
   flex-grow: 1;
   border: none;
   background: none;
+}
+ 
+
+.OutPut{
+  position: absolute;
+  width: 40%;
+  height: 93%;
+  right: 5%;
+  top: 5%;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.Munieco{
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+}
+
+.Empty{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 60%;
+  left: 2%;
+}
+
+.Empty-Text1{
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.Empty-Text2{
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  position: relative;
+}
+
+.Res{
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  top: 5%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+  overflow: scroll;
+}
+
+.Copi{
+  width: 288px;box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  position: absolute;
+  width: 80%;
+  height: 10%;
+  left: 10%;
+  bottom: 2%;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.Copi-Text{
+  width: 100%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 19px;
+  text-align: center;
+  color: #0A3871;
+}
+
+.Contenedor{
+  display: block;
+}
+
+@media (max-width: 1200px) {
+
+  .Munieco{
+    display: none;
+  }
+
+  .Contenedor{
+    display: block;
+  }
+
+  .OutPut{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 50%;
+    top: 78%;
+    left: 10%;
+    overflow:scroll;
+  }
+
+  .Empty{
+    top: 0%;
+    left: 15%;
+  }
+
+  .Res{
+    height: 70%;
+  }
+
+  .Text{
+    width: 80%;
+    height: 45%;
+    left: 10%;
+  }
+
+  .Buttons{
+    width: 50%;
+    height: 8%;
+    left: 20%;
+    top: 68%;
+  }
+
+  .Alert{
+    width: 20%;
+    height: 2%;
+    left: 13%;
+    top: 65%;
+  }
+}
+
+@media (max-width: 500px){
+  .Buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 10%;
+  }
+
+  .Encriptar{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .Desencriptar{
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+
+  .OutPut{
+    margin-top: 100px;
+  }
 }

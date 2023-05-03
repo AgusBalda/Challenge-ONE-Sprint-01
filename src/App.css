@@ -109,12 +109,12 @@
 }
 
 .Encriptar:hover{
-  background: greenyellow;
-  border: 1px solid #0A3871;
+  background: #157eff;
+  border: 1px solid greenyellow;
 }
 
 .Encriptar:hover .Button-Encriptar{
-  color: #0A3871;
+  color: greenyellow;
 }
 
 .Button-Encriptar{
@@ -151,7 +151,7 @@
 }
 
 .Desencriptar:hover{
-  background: #0A3871;
+  background: #157eff;
   border: 1px solid greenyellow;
 }
 
